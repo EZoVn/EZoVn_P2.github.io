@@ -3,10 +3,16 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- CSS -->
-        <link rel="stylesheet" type="text/css" href="assets/css/normalize.css" /> 
+            <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="assets/css/normalize.css" />
+             <!--CSS pour mobile et tablette  -->
+         <link rel="stylesheet" media="screen and (max-width: 768px)" href="assets/css/mobile_nomalize.css"/>
+         <link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 992px)" href="assets/css/mobile_nomalize.css"/>
+            
+            <!-- FONT AWESONE -->
+        <script src="https://kit.fontawesome.com/205d2d4b64.js" crossorigin="anonymous"></script>
 
-        <!-- FONT -->
+            <!-- FONT -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
@@ -17,8 +23,8 @@
     <body>
         <header>
             <!--Panneau de navigation-->
-            <div class="menu">
-                <img src="assets/logo/Booki.png" alt="Logo miniature du site" />
+            <div id="menu">
+                <img src="assets/logo/Booki@3x.png" alt="Logo miniature du site" />
                 <nav id="menu_item">
                     <!-- liens cliquable -->
                     <a href="#hebergements">Hébergements</a>
@@ -27,15 +33,21 @@
             </div>
             
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-            <h2>En plein centre ville ou en pleine nature</h2>
+            <p>En plein centre ville ou en pleine nature</p>
 
-            <!--icone position a placer-->
-            <!--barre de rechercher-->
-
-            <div id="recherche">
+            
+            <div>
                 <!-- img -->
+                
+                <!--barre de rechercher-->
                 <!-- formulaire -->
+                <form id="recherche" method="post" action="recherche.php">
+                    <i id="locate" class="fas fa-map-marker-alt"></i>
+                    <input type="search" name="recherche" id="search" placeholder="Marseille, France"/>
+                    <input type="submit" value="Rechercher" id="bouton"/>
+                </form>
                 <!-- lien cliquable -->
+                
             </div>
             
             <!-- Barre de filtres -->
@@ -49,6 +61,10 @@
             
 
         </header>
+        <section>
+            <p>ceci est un test de style</p>
+            <h2>test de style</h2>
+        </section>
 
         <footer>
             
