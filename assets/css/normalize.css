@@ -11,6 +11,7 @@ body{
     width: auto;
     box-sizing: border-box;
     font-family: 'Raleway', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 100px;
 }
 
 
@@ -21,6 +22,8 @@ body{
     display: flex;
     justify-content: space-between;
     
+}
+#menu{
 }
 #menu a{
     font-size: 24px;
@@ -36,7 +39,7 @@ header ul a{
 #menu_item a:hover{
     color: #0065FC;
     border-top: 3px #0065FC solid;
-    padding-top: 4px;
+    padding-top: 97px;
     
 }
 header h1 + p{

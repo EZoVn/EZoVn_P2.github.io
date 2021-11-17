@@ -3,6 +3,7 @@
 @media screen and (max-width: 768px) {
     body{
         width: auto;
+        margin: auto;
     }
     #menu{
         display: flex;
@@ -17,12 +18,16 @@
         width: auto;
         font-size: 18px;
         margin-left: 5px;
+        padding: 10px;
     }
     #menu_item a:hover{
         border-top: none;
         color: #0065FC;
         border-bottom: 3px #0065FC solid;
         padding-bottom: 5px;
+    }
+    #recherche{
+        width: 75%;
     }
 }
 
@@ -32,6 +37,7 @@
 @media screen and (min-width: 768px) and (max-width: 992px) {
     body{
         width: auto;
+        margin: auto;
     }
     #menu {
         margin: 0;
