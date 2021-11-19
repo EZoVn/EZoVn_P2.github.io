@@ -78,48 +78,112 @@ header h1 + p{
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding-right: 25px;
 }
 #filtre a{
     text-decoration: none;
     color: inherit;
-    
-    
 }
 #filtre ul{
     display: flex;
     list-style-type: none;
     gap: 20px; /*A VERIFIER*/
+    flex-wrap: wrap;
+    
     
 }
+                    /* -------------------------------leger probleme au niveau ds bordures a regler et reduire la taille en version mobile */
 
+#filtre li{
+    padding-right: 10px;
+    border:2px solid #d9d9d9;
+    border-radius: 50px 50px 50px 50px ;
+    border-left: none;
+}
 #filtre li i{
     position:inherit;
     background-color: #deebff;
     color: #0065fc;
     padding: 20px;
-    border-radius: 50%;
+    border: 4px solid #deebff;
+    border-radius: 50px ;
 }
-#filtre li{
-    padding-right: 10px;
-    
-    
-    
-    border:2px solid #d9d9d9;
-    
-    border-radius: 0 50px 50px 0;
-    border-left: none;
+#filtre li a{
+    padding-left: 15px;
     
 }
 
-/* 
--------------------------------comment faire des bords rond quand le logo est fin */
 header p i{
     margin-right: 15px;
-    border: 1px solid #d9d9d9;
+    border: 4px solid #d9d9d9;
     padding: 5px;
-     
-    border-radius:  50px;
+    border-radius: 50px;
 }
 /* ---------------------------------------------------ARTICLE----------------- */
+section{
+    display: flex;
 
+}
+article{
+    background: #f2f2f2;
+    border-radius: 50px;
+    height: auto;
+    padding: 80px;
+    flex: 3;
+}
+#hebergement{
+    display: flex;
+    flex-direction: row;
+    gap: 62px;
+    flex-wrap: wrap;
+    
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    object-fit: contain;
+    background: red;
+    border-radius: 40px;
+    padding: 10px;
+    
+}
+.card img{
+    width: 275px;
+    height: 175px;
+    border-radius: 40px 40px 0 0;
+}
+
+
+
+.star{
+    color: #0065fc;
+}
+.star span{
+    color: #d9d9d9;
+}
+
+/* ------------------------------------------------------ASIDE----------------------------------- */
+aside{
+    
+    flex: 1.2;
+    background: #f2f2f2;
+    border-radius: 50px;
+    margin-left: 80px;
+    
+}
+.card_pop{
+    display: flex;
+}
+.card_pop img{
+    width: 220px;
+    height: 268px;
+}
+.card_pop ul{
+    list-style-type: none;
+}
+.card_pop i{
+    color: #0065fc;
+}
+.star_pop span{
+    color: #d9d9d9;
+
+}

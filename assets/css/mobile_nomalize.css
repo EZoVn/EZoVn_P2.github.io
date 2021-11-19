@@ -33,7 +33,9 @@
     #bouton{
         max-width: 35%;
     }
-    #recherche{
+    #filtre ul{
+        
+
         
     }
 }
@@ -58,5 +60,8 @@
         color: #0065FC;
         border-top: 3px #0065FC solid;
         padding-top: 5px;
+    }
+    #filtre ul{
+        
     }
 }
