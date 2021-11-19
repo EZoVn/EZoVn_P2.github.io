@@ -26,18 +26,25 @@
         border-bottom: 3px #0065FC solid;
         padding-bottom: 5px;
     }
+    #search{
+
+        width: 50%;
+    }
+    #bouton{
+        max-width: 35%;
+    }
     #recherche{
-        width: 75%;
+        
     }
 }
 
 
 /*------------------------------------------TABLETTES---------------------------------------------------*/
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
     body{
         width: auto;
-        margin: auto;
+        margin: 10px;
     }
     #menu {
         margin: 0;
@@ -46,5 +53,10 @@
         color: red;
         width: auto;
     }
-    
+    #menu_item a:hover{
+        border-top: none;
+        color: #0065FC;
+        border-top: 3px #0065FC solid;
+        padding-top: 5px;
+    }
 }

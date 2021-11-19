@@ -23,8 +23,7 @@ body{
     justify-content: space-between;
     
 }
-#menu{
-}
+
 #menu a{
     font-size: 24px;
     color: inherit; 
@@ -52,22 +51,23 @@ header h1 + p{
 }
 #locate{
     background-color: #F2f2f2;
+    
     padding: 20px;
     border-radius: 10px 0 0 10px;
 }
 #search{
-    width: 280px;
+    width: 468px;  
     height: 56px;
     font-family: 'Raleway';
     font-size: 26px;
                         /*<<<------<<<-------<<--champs de recherche grisé, voir pour changer  */
-    border: 1px solid #f2f2f2 ;
+    border: 2px solid #f2f2f2 ;
 }
 #bouton{
     width: 160px;
     height: 56px;
     color: white;
-    font-size: 26px;
+    font-size: 24px;
     background-color: #0065fc;
     border: none;
     border-radius: 0 10px 10px 0;
@@ -75,12 +75,51 @@ header h1 + p{
 
 /* ---------------------------Filtres--------- */
 #filtre{
-    list-style-type: none;
-    
     display: flex;
+    align-items: center;
     justify-content: flex-start;
-    gap: 10px; /*A VERIFIER*/
-
+    padding-right: 25px;
+}
+#filtre a{
+    text-decoration: none;
+    color: inherit;
+    
+    
+}
+#filtre ul{
+    display: flex;
+    list-style-type: none;
+    gap: 20px; /*A VERIFIER*/
+    
 }
 
+#filtre li i{
+    position:inherit;
+    background-color: #deebff;
+    color: #0065fc;
+    padding: 20px;
+    border-radius: 50%;
+}
+#filtre li{
+    padding-right: 10px;
+    
+    
+    
+    border:2px solid #d9d9d9;
+    
+    border-radius: 0 50px 50px 0;
+    border-left: none;
+    
+}
+
+/* 
+-------------------------------comment faire des bords rond quand le logo est fin */
+header p i{
+    margin-right: 15px;
+    border: 1px solid #d9d9d9;
+    padding: 5px;
+     
+    border-radius:  50px;
+}
+/* ---------------------------------------------------ARTICLE----------------- */
 
