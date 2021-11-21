@@ -153,10 +153,10 @@ header h1 + p{
 /* ---------------------------------------------------ARTICLE------------------------------------------------------------ */
 section{
     display: flex;
-    
 }
 section h1, .titre_populaire{
     font-size: 36px;
+    margin-left: 10px;
 }
 article{
     max-width: 1760px;
@@ -164,8 +164,9 @@ article{
     background: #f2f2f2;
     border-radius: 50px;
     
-    padding-right: 80px;
-    padding-left: 80px;
+    padding-bottom: 2%;
+    padding-right: 1%;
+    padding-left: 1%;
     flex: 3;
 }
 #hebergement{
@@ -189,24 +190,26 @@ article{
 .card{
     display: flex;
     flex-direction: column;
+    width: 30%;
     
-    /* min-height: 150px; */
+    min-height: 150px;
     background: white;
     border-radius: 40px;
-    padding: 10px;
+    padding: 1%;
     
 }
 /* effet au survol de la card, elle grossit 1.1x */
 .card:hover{
     cursor: pointer;
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .card img{
     /* width: 472px;
     height: 228px;  taille de base sur photoshop, trop grand */
-    width: 400px;
-    height: 220px;
+    width: 100%;
+    max-height: 200px;
+    
     object-fit: cover;
     border-radius: 40px 40px 0 0;
 }
@@ -223,6 +226,7 @@ article{
 article span{
     font-size: 20px;
     font-weight: bold;
+    margin-left: 10px;
 }
 /* ------------------------------------------------------ASIDE----------------------------------- */
 aside{
@@ -230,8 +234,8 @@ aside{
     background: #f2f2f2;
     border-radius: 50px;
     margin-left: 80px; 
-    padding-right: 74px;
-    padding-left: 74px;
+    padding-right: 1%;
+    padding-left: 1%;
     
 }
 .titre_populaire{
@@ -242,24 +246,30 @@ aside{
 
 .card_pop{
     display: flex;
-    
-    
+    /* petit soucis sur la hauteur de la carte qui ne permet pas de reduire la photo en responsive */
+    height: 250px; 
     background: white;
     border-radius: 40px;
     padding: 10px;
-    margin-bottom: 66px;
+    margin-bottom: 2%;
     gap: 30px;
     
     
 }
-
+/* je emt 40% de largeur pour que la photo prenne cette espace 
+et 55% pour la description */
 .card_pop img{
-    width: 254px;
-    height: 268px;
+    width: 40%;
+    height: 100%;
     object-fit: cover;
     border-radius: 40px 0 0 40px;
 }
-.card_pop ul{
-    list-style-type: none;
+.card_pop:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+.card_pop_text{
+    width: 55%;
+    
 }
 
