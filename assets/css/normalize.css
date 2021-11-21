@@ -53,13 +53,15 @@ header h1 + p{
     background-color: #F2f2f2;
     
     padding: 20px;
-    border-radius: 10px 0 0 10px;
+    border-radius: 20px 0 0 20px;
 }
 #search{
     width: 468px;  
     height: 56px;
-    font-family: 'Raleway';
+    font-weight: bold;
     font-size: 26px;
+    
+    
                         /*<<<------<<<-------<<--champs de recherche grisé, voir pour changer  */
     border: 2px solid #f2f2f2 ;
 }
@@ -69,53 +71,83 @@ header h1 + p{
     color: white;
     font-size: 24px;
     background-color: #0065fc;
+    
     border: none;
-    border-radius: 0 10px 10px 0;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+}
+#bouton:hover{
+    background-color: #f2f2f2;
+    color: #0065fc;
 }
 
 /* ---------------------------Filtres--------- */
-#filtre{
+.filtre{
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    
+    
 }
-#filtre a{
+.filtre a{
+    display: flex;
+    justify-content: center;
+    
     text-decoration: none;
     color: inherit;
+    font-weight: bold;
+    padding-left: 20px;
+    padding-right: 20px;
 }
-#filtre ul{
+.icone_et_filtre{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     list-style-type: none;
-    gap: 20px; /*A VERIFIER*/
     flex-wrap: wrap;
-    
-    
 }
-                    /* -------------------------------leger probleme au niveau ds bordures a regler et reduire la taille en version mobile */
 
-#filtre li{
-    padding-right: 10px;
-    border:2px solid #d9d9d9;
-    border-radius: 50px 50px 50px 50px ;
+.filtre li{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    border-radius: 30px;
+    margin-right: 20px;
+    border: 2px solid #d9d9d9;
     border-left: none;
 }
-#filtre li i{
-    position:inherit;
+.icones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    width: 52px;   /* on ajoute 2px pour anticiper le bord qui doit depasser du bord de filtre li*/
+    height: 52px;
+    color: #0065FC;
     background-color: #deebff;
-    color: #0065fc;
-    padding: 20px;
-    border: 4px solid #deebff;
-    border-radius: 50px ;
 }
-#filtre li a{
+.filtre li a{
     padding-left: 15px;
     
 }
+/* A ameliorer------------------------------------------------------------- */
+.filtre a:hover{
+    color: #0065FC;
+}
 
-header p i{
+
+/* --------------icone information-------- */
+.icone{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    
+}
+.icone i{
+    color: #0065fc;
+    font-size: 16px;
     margin-right: 15px;
-    border: 4px solid #d9d9d9;
-    padding: 5px;
+    border: 1px solid #d9d9d9;
+    padding: 5px 10px;
     border-radius: 50px;
 }
 /* ---------------------------------------------------ARTICLE----------------- */
@@ -123,67 +155,89 @@ section{
     display: flex;
 
 }
+section h1, .titre_populaire{
+    font-size: 36px;
+}
 article{
+    max-width: 1760px;
+    height: auto;
     background: #f2f2f2;
     border-radius: 50px;
-    height: auto;
+    
     padding: 80px;
     flex: 3;
 }
 #hebergement{
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     gap: 62px;
-    flex-wrap: wrap;
     
 }
 .card{
     display: flex;
     flex-direction: column;
-    object-fit: contain;
-    background: red;
+    min-height: 150px;
+    background: white;
     border-radius: 40px;
     padding: 10px;
     
 }
+
 .card img{
-    width: 275px;
-    height: 175px;
+    /* width: 472px;
+    height: 228px; */
+    width: 400px;
+    height: 220px;
+    object-fit: cover;
     border-radius: 40px 40px 0 0;
 }
 
 
 
-.star{
+.blue{
     color: #0065fc;
+    margin-top: 10px;
 }
-.star span{
+.grey{
     color: #d9d9d9;
 }
 
 /* ------------------------------------------------------ASIDE----------------------------------- */
 aside{
-    
     flex: 1.2;
     background: #f2f2f2;
     border-radius: 50px;
-    margin-left: 80px;
+    margin-left: 80px; 
+    padding-right: 74px;
+    padding-left: 74px;
     
 }
+.titre_populaire{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
 .card_pop{
     display: flex;
+    
+    
+    background: white;
+    border-radius: 40px;
+    padding: 10px;
+    margin-bottom: 66px;
+    gap: 30px;
+    
+    
 }
+
 .card_pop img{
-    width: 220px;
+    width: 254px;
     height: 268px;
+    object-fit: cover;
+    border-radius: 40px 0 0 40px;
 }
 .card_pop ul{
     list-style-type: none;
 }
-.card_pop i{
-    color: #0065fc;
-}
-.star_pop span{
-    color: #d9d9d9;
 
-}
