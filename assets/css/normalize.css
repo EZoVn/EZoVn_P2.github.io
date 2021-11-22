@@ -12,15 +12,18 @@ body{
     box-sizing: border-box;
     font-family: 'Raleway', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     margin: 100px;
+    /* marge vu sur photoshop mais plutot grande en version desktop */
 }
 
 
+/* ---------------------------------------------------------------------------------------- */
 /*------------------------------------------HEADER------------------------------------------*/
+/* ---------------------------------------------------------------------------------------- */
 #menu{
-    margin: auto; /*marge exterieur*/
-    padding: 0; /*marge interieur*/
     display: flex;
     justify-content: space-between;
+    margin: auto; /*marge exterieur*/
+    padding: 0; /*marge interieur*/
     
 }
 
@@ -44,7 +47,9 @@ header ul a{
 header h1 + p{
     font-size: 24px;
 }
+/* ---------------------------------------------------------------------------------------- */
 /* ----------icone--formulaire de recherche--bouton--------- */
+/* ---------------------------------------------------------------------------------------- */
 #recherche{
     display: flex;
     align-items: flex-start;
@@ -60,9 +65,6 @@ header h1 + p{
     height: 56px;
     font-weight: bold;
     font-size: 26px;
-    
-    
-                        /*<<<------<<<-------<<--champs de recherche grisé, voir pour changer  */
     border: 2px solid #f2f2f2 ;
 }
 #bouton{
@@ -81,7 +83,9 @@ header h1 + p{
     color: #0065fc;
 }
 
+/* ---------------------------------------------------------------------------------------- */
 /* ---------------------------Filtres--------- */
+/* ---------------------------------------------------------------------------------------- */
 .filtre{
     display: flex;
     align-items: center;
@@ -89,7 +93,7 @@ header h1 + p{
     
 }
 .filtre a{
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     
     text-decoration: none;
@@ -135,7 +139,7 @@ header h1 + p{
 }
 
 
-/* --------------icone information-------- */
+/* -----icone information----- */
 .icone{
     display: flex;
     align-items: center;
@@ -146,19 +150,22 @@ header h1 + p{
     color: #0065fc;
     font-size: 16px;
     margin-right: 15px;
+    margin-left: 15px;
     border: 1px solid #d9d9d9;
     padding: 5px 10px;
     border-radius: 50px;
 }
-/* ---------------------------------------------------ARTICLE------------------------------------------------------------ */
-section{
+/* ---------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------ARTICLE----Hebergement a marseille-------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------- */
+.section{
     display: flex;
 }
-section h1, .titre_populaire{
+.section h1, .titre_populaire{
     font-size: 36px;
     margin-left: 10px;
 }
-article{
+.article1{
     max-width: 1760px;
     /* height: auto; */
     background: #f2f2f2;
@@ -169,12 +176,7 @@ article{
     padding-left: 1%;
     flex: 3;
 }
-#hebergement{
-    /* display: flex;
-    flex-flow: row wrap;          version avec un seul div pour 6card 
-    gap: 62px;                 */
-    
-}
+
 .hbg1{
     display: flex;
     justify-content: space-between;
@@ -187,6 +189,18 @@ article{
     margin-bottom: 62px;
 }
 
+.card h2 {
+    margin-left: 5%;
+    margin-block-start: 2%;
+    margin-block-end: 1%;
+    
+}
+.card p{
+    margin-left: 5%;
+    margin-block-start: 2%;
+    margin-block-end: 1%;
+}
+
 .card{
     display: flex;
     flex-direction: column;
@@ -196,19 +210,18 @@ article{
     background: white;
     border-radius: 40px;
     padding: 1%;
+    box-shadow: 2px 2px 10px #e7e7e7;
     
 }
-/* effet au survol de la card, elle grossit 1.1x */
+/* effet au survol de la card, elle grossit 1.05x */
 .card:hover{
     cursor: pointer;
     transform: scale(1.05);
 }
 
 .card img{
-    /* width: 472px;
-    height: 228px;  taille de base sur photoshop, trop grand */
     width: 100%;
-    max-height: 200px;
+    height: 200px;
     
     object-fit: cover;
     border-radius: 40px 40px 0 0;
@@ -216,6 +229,10 @@ article{
 
 
 /* couleurs des etoiles */
+.star   {
+    margin-left: 5%;
+    margin-block-end: 2%;/* marge sous le block star*/
+}
 .blue{
     color: #0065fc;
     margin-top: 10px;
@@ -223,12 +240,15 @@ article{
 .grey{
     color: #d9d9d9;
 }
+/* text afficher plus */
 article span{
     font-size: 20px;
     font-weight: bold;
     margin-left: 10px;
 }
-/* ------------------------------------------------------ASIDE----------------------------------- */
+/* ---------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------ASIDE---Les plus populaires-------------------------------- */
+/* ---------------------------------------------------------------------------------------- */
 aside{
     flex: 1.2;
     background: #f2f2f2;
@@ -236,14 +256,13 @@ aside{
     margin-left: 80px; 
     padding-right: 1%;
     padding-left: 1%;
-    
 }
 .titre_populaire{
     display: flex;
     justify-content: space-between;
     align-items: baseline;
 }
-
+/* ---------------------écart entre lle paragraphe et les etoiles non resolus, etoiles au bot de la carte ??? */
 .card_pop{
     display: flex;
     /* petit soucis sur la hauteur de la carte qui ne permet pas de reduire la photo en responsive */
@@ -251,9 +270,9 @@ aside{
     background: white;
     border-radius: 40px;
     padding: 10px;
-    margin-bottom: 2%;
+    margin-bottom: 4%;
     gap: 30px;
-    
+    box-shadow: 2px 2px 10px #e7e7e7;
     
 }
 /* je emt 40% de largeur pour que la photo prenne cette espace 
@@ -273,3 +292,67 @@ et 55% pour la description */
     
 }
 
+/* ---------------------------------------------------------------------------------------- */
+/* -----------------------------------ACTIVITES-------------------------- */
+/* ---------------------------------------------------------------------------------------- */
+.activite{
+    display: flex;
+    height: 600px;
+    gap: 4%;
+}
+.activite h2{
+    margin-left: 4%;
+    margin-block-start: 5px;
+}
+.activite img{
+    object-fit: cover;
+}
+.grande_image{
+    width: 24%;
+    box-shadow: 2px 2px 10px #f2f2f2;
+    border-radius: 25px;
+}
+.grande_image img{
+    width: 100%;
+    height: 530px;
+    border-radius: 25px 25px 0 0;
+}
+
+.img_1_1{
+    width: 100%;
+    
+    border-radius: 25px;
+    box-shadow: 2px 2px 10px #f2f2f2;
+}
+.img_1_2{
+    width: 100%;
+    
+    border-radius: 25px;
+    box-shadow: 2px 2px 10px #f2f2f2;
+}
+.petite_image1 img{
+    width: 100%;
+    height: 230px;
+    border-radius: 25px 25px 0 0;
+}
+
+.petite_image2 img{
+    width: 100%;
+    height: 230px;
+    /* ------------------------------------------ecart entre les cadres img1 et img 2 */
+    border-radius: 25px 25px 0 0;
+}
+
+.img_2_1{
+    width: 100%;
+    
+    border-radius: 25px;
+    box-shadow: 2px 2px 10px #f2f2f2;
+}
+.img_2_2{
+    width: 100%;
+   
+    box-shadow: 2px 2px 10px #f2f2f2;
+    border-radius: 25px;
+    
+}

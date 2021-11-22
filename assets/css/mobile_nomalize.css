@@ -1,6 +1,6 @@
 /*------------------------------------------MOBILES---------------------------------------------------*/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     body{
         width: auto;
         margin: 5px;
@@ -8,55 +8,94 @@
     #menu{
         display: flex;
         flex-direction: column;
-        
+        text-align: center; 
     }
     #menu img{
-        
         width: 150px;
+        margin: auto;
     }
     #menu_item{
         display: flex;
-        justify-content: space-between;
         margin: 0;
-        
-        
-        
     }
     #menu a{
-        
+        width: 100%;
         font-size: 18px;
-        padding: 50%;
-        padding-bottom: 5px;
+        margin-left: 0;
+        padding: 0;
+        padding-bottom: 15px;
         border-bottom: 3px #f2f2f2 solid;
-        
-        justify-content: space-around;
-        
     }
     #menu_item a:hover{
-        
         border-top: none;
-        
-        color: #0065FC;
+        padding-top: 0;
         border-bottom: 3px #0065FC solid;
-        padding-bottom: 5px;
+        color: #0065FC;
+    }
+    #recherche{
+        /* align-items: center; */
+        width: 93%;
+        margin-left: 5%;
+        margin-bottom: 30px;
     }
     #search{
 
-        width: 50%;
+        width: 55%;
     }
     #bouton{
-        initial-value: none;
-        max-width: 35%;
-    }
-    .card{
-        min-height: 150px;
-
+        /* display: none; ------------------------changer le bouton recherche en icone loupe. cliquable ? */
+        max-width: 30%;
         
     }
 
-    section{
-        flex-wrap: wrap;
+    .filtre{
+        flex-direction: column;
+        align-items: flex-start;
     }
+    .icone_et_fitlre{
+        flex-flow: row wrap;
+    }
+    .filtre li{
+        /* reduit la marge a droite et augmente celle du bas pour créer les espaces */
+        margin-right: 5px;
+        margin-bottom: 5px;
+    }
+
+
+    .icone{
+        margin-left: 20px;
+    }
+    .section{
+        /* on affiche en colonnes inversé. vu que les plus populaires s'affiche en premier sur mobile */
+        flex-direction: column-reverse;
+    }
+    aside{
+        margin-left: 1%;
+        margin-bottom: 20px;
+        padding: 4%;
+        border-radius: 0;
+    }
+    
+    article{
+        margin-left: 1%;
+        background: none;
+    }
+    article span{
+        /* suppression du text afficher plus */
+        display: none;
+    }
+    .hbg1, .hbg2{
+        flex-direction: column;
+
+    }
+    .card{
+        width: 95%;
+        min-height: 150px;
+        margin-bottom: 10px;
+        /* legere ombre pour faire contraste */
+        box-shadow: 10px 10px 5px #f2f2f2;
+    }
+
 }
 
 
@@ -71,7 +110,7 @@
         margin: 0;
     }
     #menu a{
-        color: red;
+        color: red; /*Couleur provisoire pour differencier entre desktop et mobile*/
         width: auto;
     }
     #menu_item a:hover{
@@ -80,7 +119,24 @@
         border-top: 3px #0065FC solid;
         padding-top: 5px;
     }
-    #filtre ul{
-        
+   
+    .icone_et_fitlre{
+        flex-flow: row wrap;
+    }
+    .filtre li{
+        /* reduit la marge a droite et augmente celle du bas pour créer les espaces */
+        margin-right: 5px;
+        margin-bottom: 5px;
+    }
+    .section{
+        flex-direction: column;
+        gap: 15px;
+    }
+    article{
+        margin-left: 10px;
+
+    }
+    aside{
+        margin-left: 10px;
     }
 }
