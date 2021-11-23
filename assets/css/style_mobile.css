@@ -3,6 +3,8 @@
 @media screen and (max-width: 767px) {
     body{
         width: auto;
+    }
+    .marge{
         margin: 5px;
     }
     #menu{
@@ -34,19 +36,30 @@
     }
     #recherche{
         /* align-items: center; */
-        width: 93%;
+        width: 95%;
         margin-left: 5%;
         margin-bottom: 30px;
     }
     #search{
-
+        font-size: 21px;
         width: 55%;
     }
+    /* je choisi de masquer le bouton recherche  pour afficher le logo loupe*/
     #bouton{
-        /* display: none; ------------------------changer le bouton recherche en icone loupe. cliquable ? */
-        max-width: 30%;
+        display: none;
         
     }
+    #bouton_s{
+        
+        display: block;
+        width: 45px;
+        height: 36px;
+        padding: 10px;
+        background-color: #0065fc;
+        border: none;
+        border-radius: 0 20px 20px 0;
+    }
+    
 
     .filtre{
         flex-direction: column;
@@ -55,20 +68,26 @@
     .icone_et_fitlre{
         flex-flow: row wrap;
     }
+    .filtre ul{
+        padding-inline-start: 0;
+
+    }
     .filtre li{
         /* reduit la marge a droite et augmente celle du bas pour créer les espaces */
         margin-right: 5px;
         margin-bottom: 5px;
     }
-
-
+    
     .icone{
         margin-left: 20px;
     }
-    .section{
+
+    
+    .section1{
         /* on affiche en colonnes inversé. vu que les plus populaires s'affiche en premier sur mobile */
         flex-direction: column-reverse;
     }
+    /* LES PLUS POPULAIRES */
     aside{
         margin-left: 1%;
         margin-bottom: 20px;
@@ -76,6 +95,7 @@
         border-radius: 0;
     }
     
+    /* HEBERGEMENTS A MARSEILLE */
     article{
         margin-left: 1%;
         background: none;
@@ -86,24 +106,60 @@
     }
     .hbg1, .hbg2{
         flex-direction: column;
-
     }
     .card{
         width: 95%;
         min-height: 150px;
         margin-bottom: 10px;
-        /* legere ombre pour faire contraste */
         box-shadow: 10px 10px 5px #f2f2f2;
     }
-
+    
+    /* ACTIVITE A MARSEILLE */
+    .activite{
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    .activite h2{
+        padding: 25px;
+    }
+    
+    .activite img{
+        width: 100%;
+        height: 300px;
+    }
+    .grande_image{
+        width: 100%;
+    }
+    .petite_image1, .petite_image2{
+        width: 100%;
+        
+    }
+    .img_1_2, .img_2_2{
+        margin-top: 0;
+    }
+    footer{
+        flex-direction: column;
+        padding: 0;
+        padding-left: 50px;
+        padding-bottom: 20px;
+        gap: 15px;
+    }
+    .propos{
+        padding-left: 0;
+    }
 }
 
 
+/*----------------------------------------------------------------------------------------------------*/
 /*------------------------------------------TABLETTES---------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------*/
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
     body{
         width: auto;
+    }
+    .marge{
         margin: 10px;
     }
     #menu {
@@ -128,7 +184,7 @@
         margin-right: 5px;
         margin-bottom: 5px;
     }
-    .section{
+    .section1{
         flex-direction: column;
         gap: 15px;
     }
@@ -138,5 +194,52 @@
     }
     aside{
         margin-left: 10px;
+    }
+    .card_pop{
+        margin-bottom: 5%;
+    }
+    .card_pop_text{
+        justify-content: space-around;
+    }
+    .card_pop img{
+        width: 100%;
+        
+    }
+
+    #activites{
+        margin-left: 36px;
+    }
+    .activite{
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    .activite h2{
+        padding: 25px;
+    }
+    
+    .activite img{
+        width: 100%;
+        height: 300px;
+    }
+    .grande_image{
+        width: 100%;
+    }
+    .petite_image1, .petite_image2{
+        width: 100%;
+        
+    }
+    .img_1_2, .img_2_2{
+        margin-top: 0;
+    }
+    footer{
+        flex-direction: column;
+        padding: 0;
+        padding-left: 50px;
+        padding-bottom: 20px;
+        gap: 15px;
+    }
+    .propos{
+        padding-left: 0;
     }
 }

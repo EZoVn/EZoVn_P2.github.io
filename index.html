@@ -6,10 +6,10 @@
         <!-- FONT AWESONE -->
     <script src="https://kit.fontawesome.com/205d2d4b64.js" crossorigin="anonymous"></script>
             <!-- CSS -->
-        <link rel="stylesheet" type="text/css" href="assets/css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
              <!--CSS pour mobile et tablette  -->
-         <link rel="stylesheet" media="screen and (max-width: 768px)" href="assets/css/mobile_nomalize.css"/>
-         <link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 992px)" href="assets/css/mobile_nomalize.css"/>
+         <link rel="stylesheet" media="screen and (max-width: 767px)" href="assets/css/style_mobile.css"/>
+         <link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 991px)" href="assets/css/style_mobile.css"/>
             
 
             <!-- FONT -->
@@ -21,10 +21,11 @@
     </head>
 
     <body>
+        <div class="marge">
         <header>
             <!--Panneau de navigation-->
             <div id="menu">
-                <img src="assets/logo/Booki@3x.png" alt="Logo miniature du site" />
+                <img src="assets/logo/Booki.png" alt="Logo miniature du site" />
                 <nav id="menu_item">
                     <!-- liens cliquable -->
                     <a href="#hebergement">Hébergements</a>
@@ -44,6 +45,9 @@
                     <i id="locate" class="fas fa-map-marker-alt"></i>
                     <input type="search" name="recherche" id="search" value="Marseille, France"/>
                     <input type="submit" value="Rechercher" id="bouton"/>
+                    <!-- logo loupe pour la version mobile -->
+                    <input type="image" id="bouton_s" alt="logo recherche" src="assets/logo/search-solid.svg">
+                    
                 </form>
                 
             </div>
@@ -66,7 +70,7 @@
             </div>
         </header>
             <!-- SECTION regroupant ARTICLE hebergements a Marseille et ASIDE les plus populaires -->
-        <section class="section">
+        <section class="section1">
             <article class="article1">
                 <h1>Hébergements à Marseille</h1>
                 <div id="hebergement">
@@ -161,8 +165,10 @@
                     <div class="card_pop">
                         <img src="assets/images/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="photo chambre hotel le soleil du matin">
                         <div class="card_pop_text">
-                            <h2>Hôtel Le soleil du matin</h2>
-                            <p>Nuit à partir de 128<strong>€</strong></p>
+                            <div>
+                                <h2>Hôtel Le soleil du matin</h2>
+                                <p>Nuit à partir de 128<strong>€</strong></p>
+                            </div>
                             <div>
                                 <i class="fas fa-star blue"></i>
                                 <i class="fas fa-star blue"></i>
@@ -175,8 +181,10 @@
                     <div class="card_pop">
                         <img src="assets/images/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Photo chambre au coeur de l'eau">
                         <div class="card_pop_text">
-                            <h2>Au coeur de l'eau Chambres d'hotes</h2>
-                            <p>nuit à partir de 71<strong>€</strong></p>
+                            <div>
+                                <h2>Au coeur de l'eau Chambres d'hotes</h2>
+                                <p>nuit à partir de 71<strong>€</strong></p>
+                            </div>
                             <div>
                                 <i class="fas fa-star blue"></i>
                                 <i class="fas fa-star blue"></i>
@@ -189,9 +197,11 @@
                     <div class="card_pop">
                         <img src="assets/images/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="photo de l'hôtel tout bleu et blanc">
                         <div class="card_pop_text">
-                            <h2>Hôtel Tout bleu et Blanc</h2>
-                            <p>Nuit à partir de 68<strong>€</strong></p>
-                            <div> 
+                            <div>
+                                <h2>Hôtel Tout bleu et Blanc</h2>
+                                <p>Nuit à partir de 68<strong>€</strong></p>
+                            </div>
+                                <div> 
                                 <i class="fas fa-star blue"></i>
                                 <i class="fas fa-star blue"></i>
                                 <i class="fas fa-star blue"></i>
@@ -236,9 +246,24 @@
                 
             </div>
         </section>
-            
+    </div>    
         <footer>
-            
+            <div class="propos">
+                <h3>A propos</h3>
+                <p>Fonctionnement du site</p>
+                <p>Conditions générales de vente</p>
+                <p>Données et confidentialité</p>
+            </div>
+            <div class="heberg">
+                <h3>Nos Hébergements</h3>
+                <p>Charte qualité</p>
+                <p>Soumettre votre hôtel</p>
+            </div>
+            <div class="assistance">
+                <h3>Assistance</h3>
+                <p>Centre d'aide</p>
+                <p>Nous contacter</p>
+            </div>
         </footer>
     </body>
 </html>

@@ -11,10 +11,11 @@ body{
     width: auto;
     box-sizing: border-box;
     font-family: 'Raleway', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    margin: 100px;
-    /* marge vu sur photoshop mais plutot grande en version desktop */
 }
 
+.marge{
+    margin: 100px;
+}
 
 /* ---------------------------------------------------------------------------------------- */
 /*------------------------------------------HEADER------------------------------------------*/
@@ -26,7 +27,9 @@ body{
     padding: 0; /*marge interieur*/
     
 }
-
+#menu img{
+    margin: 20px;
+}
 #menu a{
     font-size: 24px;
     color: inherit; 
@@ -78,6 +81,9 @@ header h1 + p{
     border-radius: 0 20px 20px 0;
     cursor: pointer;
 }
+#bouton_s{
+    display: none;
+}
 #bouton:hover{
     background-color: #f2f2f2;
     color: #0065fc;
@@ -93,7 +99,6 @@ header h1 + p{
     
 }
 .filtre a{
-    /* display: flex; */
     justify-content: center;
     
     text-decoration: none;
@@ -124,7 +129,7 @@ header h1 + p{
     justify-content: center;
     align-items: center;
     border-radius: 25px;
-    width: 52px;   /* on ajoute 2px pour anticiper le bord qui doit depasser du bord de filtre li*/
+    width: 52px;   /* j'ajoute 2px pour anticiper le bord qui doit depasser du bord de filtre li*/
     height: 52px;
     color: #0065FC;
     background-color: #deebff;
@@ -133,7 +138,7 @@ header h1 + p{
     padding-left: 15px;
     
 }
-/* A ameliorer------------------------------------------------------------- */
+
 .filtre a:hover{
     color: #0065FC;
 }
@@ -158,16 +163,15 @@ header h1 + p{
 /* ---------------------------------------------------------------------------------------- */
 /* ---------------------------------------------------ARTICLE----Hebergement a marseille-------------------------------------------------------- */
 /* ---------------------------------------------------------------------------------------- */
-.section{
+.section1{
     display: flex;
 }
-.section h1, .titre_populaire{
+.section1 h1, .titre_populaire{
     font-size: 36px;
     margin-left: 10px;
 }
 .article1{
     max-width: 1760px;
-    /* height: auto; */
     background: #f2f2f2;
     border-radius: 50px;
     
@@ -229,7 +233,7 @@ header h1 + p{
 
 
 /* couleurs des etoiles */
-.star   {
+.star{
     margin-left: 5%;
     margin-block-end: 2%;/* marge sous le block star*/
 }
@@ -262,20 +266,18 @@ aside{
     justify-content: space-between;
     align-items: baseline;
 }
-/* ---------------------écart entre lle paragraphe et les etoiles non resolus, etoiles au bot de la carte ??? */
 .card_pop{
     display: flex;
-    /* petit soucis sur la hauteur de la carte qui ne permet pas de reduire la photo en responsive */
-    height: 250px; 
+    height: 210px; 
     background: white;
     border-radius: 40px;
     padding: 10px;
-    margin-bottom: 4%;
-    gap: 30px;
+    margin-bottom: 8%;
+    gap: 20px;
     box-shadow: 2px 2px 10px #e7e7e7;
     
 }
-/* je emt 40% de largeur pour que la photo prenne cette espace 
+/* je met 40% de largeur pour que la photo prenne cette espace 
 et 55% pour la description */
 .card_pop img{
     width: 40%;
@@ -289,7 +291,9 @@ et 55% pour la description */
 }
 .card_pop_text{
     width: 55%;
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 /* ---------------------------------------------------------------------------------------- */
@@ -297,20 +301,23 @@ et 55% pour la description */
 /* ---------------------------------------------------------------------------------------- */
 .activite{
     display: flex;
+    justify-content: space-between;
     height: 600px;
-    gap: 4%;
 }
 .activite h2{
     margin-left: 4%;
-    margin-block-start: 5px;
+    margin-block-start: 10px;
 }
 .activite img{
     object-fit: cover;
 }
 .grande_image{
     width: 24%;
-    box-shadow: 2px 2px 10px #f2f2f2;
+    box-shadow: 0px 0px 10px grey;
     border-radius: 25px;
+}
+.grande_image h2{
+    margin-block-start: 5px;
 }
 .grande_image img{
     width: 100%;
@@ -318,41 +325,80 @@ et 55% pour la description */
     border-radius: 25px 25px 0 0;
 }
 
-.img_1_1{
-    width: 100%;
-    
-    border-radius: 25px;
-    box-shadow: 2px 2px 10px #f2f2f2;
-}
-.img_1_2{
-    width: 100%;
-    
-    border-radius: 25px;
-    box-shadow: 2px 2px 10px #f2f2f2;
+.petite_image1, .petite_image2{
+    width: 24%;
 }
 .petite_image1 img{
     width: 100%;
-    height: 230px;
+    height: 75%;
     border-radius: 25px 25px 0 0;
+}
+
+.img_1_1{
+    height: 53%;
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px grey;
+}
+.img_1_2{
+    height: 44%;
+    margin-top: 5%;
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px grey;
 }
 
 .petite_image2 img{
     width: 100%;
-    height: 230px;
-    /* ------------------------------------------ecart entre les cadres img1 et img 2 */
+    height: 75%;
     border-radius: 25px 25px 0 0;
 }
 
 .img_2_1{
-    width: 100%;
-    
+    height: 53%;
     border-radius: 25px;
-    box-shadow: 2px 2px 10px #f2f2f2;
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px grey;
 }
 .img_2_2{
-    width: 100%;
-   
-    box-shadow: 2px 2px 10px #f2f2f2;
+    height: 44%;
+    margin-top: 5%;
+    box-shadow: 0px 0px 10px grey;
     border-radius: 25px;
     
+}
+
+.grande_image:hover{
+    cursor: pointer;
+    transform: scale(1.025);
+}
+.img_1_1:hover{
+    cursor: pointer;
+    transform: scale(1.025);
+}
+.img_1_2:hover{
+    cursor: pointer;
+    transform: scale(1.025);
+}
+.img_2_1:hover{
+    cursor: pointer;
+    transform: scale(1.025);
+}
+.img_2_2:hover{
+    cursor: pointer;
+    transform: scale(1.025);
+}
+/* ---------------------------------------------------------------------------------------- */
+/* -----------------------------------FOOTER-------------------------- */
+/* ---------------------------------------------------------------------------------------- */
+footer{
+    display: flex;
+    margin-top: 50px;
+    background-color: #f2f2f2;
+    padding: 30px;
+    gap: 20%;
+}
+footer h3{
+    padding-bottom: 15px;
+}
+.propos{
+    padding-left: 70px;
 }
