@@ -13,8 +13,10 @@
         text-align: center; 
     }
     #menu img{
-        width: 150px;
+        width: 120px;
         margin: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
     #menu_item{
         display: flex;
@@ -23,6 +25,7 @@
     #menu a{
         width: 100%;
         font-size: 18px;
+        font-weight: 500;
         margin-left: 0;
         padding: 0;
         padding-bottom: 15px;
@@ -34,30 +37,42 @@
         border-bottom: 3px #0065FC solid;
         color: #0065FC;
     }
-    #recherche{
-        /* align-items: center; */
-        width: 95%;
-        margin-left: 5%;
+    h1{
+        font-size: 24px;    
+        font-weight: 700;
+        padding-left: 20px;
+        margin-top: 25px;
+    }
+    header h1 + p{
+        font-size: 17px;
+        font-weight: 500;
+        padding-left: 20px;
         margin-bottom: 30px;
     }
-    #search{
-        font-size: 21px;
-        width: 55%;
+    /* RECHERCHE */
+    #locate{
+        padding: 18px;
     }
-    /* je choisi de masquer le bouton recherche  pour afficher le logo loupe*/
+    #recherche{
+        align-items: center;
+        width: 85%;
+        margin-left: 5%;
+        margin-bottom: 40px;
+        
+    }
+    #search{
+        font-size: 20px;
+    }
     #bouton{
         display: none;
-        
     }
     #bouton_s{
-        
-        display: block;
-        width: 45px;
-        height: 36px;
-        padding: 10px;
+        display: flex;
+        height: 25px;
         background-color: #0065fc;
-        border: none;
-        border-radius: 0 20px 20px 0;
+        padding: 17px;
+        border-radius: 20px;
+        
     }
     
 
@@ -65,21 +80,25 @@
         flex-direction: column;
         align-items: flex-start;
     }
+
     .icone_et_fitlre{
         flex-flow: row wrap;
     }
     .filtre ul{
         padding-inline-start: 0;
+        margin-left: 20px;
 
     }
     .filtre li{
         /* reduit la marge a droite et augmente celle du bas pour créer les espaces */
-        margin-right: 5px;
-        margin-bottom: 5px;
+        margin-right: 10px;
+        margin-bottom: 10px;
     }
     
     .icone{
-        margin-left: 20px;
+        margin-left: 10px;
+        font-size: 16px;
+        margin-bottom: 20px;
     }
 
     
@@ -87,31 +106,65 @@
         /* on affiche en colonnes inversé. vu que les plus populaires s'affiche en premier sur mobile */
         flex-direction: column-reverse;
     }
+    .section1 h1, .titre_populaire{
+        font-size: 24px;
+        font-weight: 800;
+        margin-left: 0;
+        padding-left: 0;
+    }
     /* LES PLUS POPULAIRES */
     aside{
-        margin-left: 1%;
+        margin-left: 0;
         margin-bottom: 20px;
         padding: 4%;
         border-radius: 0;
     }
+    .card_pop{
+        height: 150px;
+        padding: 5px;
+        margin-bottom: 3%;
+    }
+    .card_pop_text{
+        font-size: 13px;
+        padding-bottom: 6px;
+    }
     
     /* HEBERGEMENTS A MARSEILLE */
-    article{
-        margin-left: 1%;
+    .article1{
+        margin-left: 3px;
+        margin-right: 3px;
+        margin-bottom: 30px;
         background: none;
     }
-    article span{
-        /* suppression du text afficher plus */
-        display: none;
+    .article1 h2{
+        font-size: 20px;
+    }
+    .article1 p{
+        font-size: 16px;
+        margin-top: 1px;
+        margin-bottom: 0;
+    }
+    .star{
+        font-size: 12px;
+    }
+    .hbg1{
+        margin-bottom: 0;
+    }
+    .hbg2{
+        margin-bottom: 20px;
+        
     }
     .hbg1, .hbg2{
         flex-direction: column;
     }
     .card{
         width: 95%;
-        min-height: 150px;
-        margin-bottom: 10px;
-        box-shadow: 10px 10px 5px #f2f2f2;
+        
+        margin-bottom: 15px;
+        box-shadow: 5px 5px 5px #f2f2f2;
+    }
+    .card img{
+        height: 140px;
     }
     
     /* ACTIVITE A MARSEILLE */
@@ -119,14 +172,23 @@
         width: 100%;
         height: auto;
         display: block;
+        margin-left: 3px;
+        margin-right: 3px;
+    }
+    #activites{
+        padding-left: 0;
+        margin-bottom: 30px;
+        font-weight: 800;
     }
     .activite h2{
-        padding: 25px;
+        padding: 15px;
+        padding-top: 7px;
+        font-size: 20px;
     }
     
     .activite img{
         width: 100%;
-        height: 300px;
+        height: 150px;
     }
     .grande_image{
         width: 100%;
