@@ -55,13 +55,13 @@
     }
     #recherche{
         align-items: center;
-        width: 85%;
+        width: 90%;
         margin-left: 5%;
         margin-bottom: 40px;
         
     }
     #search{
-        font-size: 20px;
+        font-size: 18px;
     }
     #bouton{
         display: none;
@@ -80,18 +80,22 @@
         flex-direction: column;
         align-items: flex-start;
     }
-
+    .icones{
+        font-size: 18px;
+    }
     .icone_et_fitlre{
         flex-flow: row wrap;
     }
     .filtre ul{
         padding-inline-start: 0;
         margin-left: 20px;
-
+    }
+    .filtre li a{
+        padding-left: 10px;
     }
     .filtre li{
         /* reduit la marge a droite et augmente celle du bas pour créer les espaces */
-        margin-right: 10px;
+        margin-right: 5px;
         margin-bottom: 10px;
     }
     
@@ -108,7 +112,7 @@
     }
     .section1 h1, .titre_populaire{
         font-size: 24px;
-        font-weight: 800;
+        font-weight: 700;
         margin-left: 0;
         padding-left: 0;
     }
@@ -128,7 +132,12 @@
         font-size: 13px;
         padding-bottom: 6px;
     }
-    
+    .card_pop_text h2{
+        margin-bottom: 0px;
+    }
+    .card_pop_text p{
+        margin-top: 5px;
+    }
     /* HEBERGEMENTS A MARSEILLE */
     .article1{
         margin-left: 3px;
@@ -178,7 +187,7 @@
     #activites{
         padding-left: 0;
         margin-bottom: 30px;
-        font-weight: 800;
+        font-weight: 700;
     }
     .activite h2{
         padding: 15px;
@@ -206,6 +215,10 @@
         padding-left: 50px;
         padding-bottom: 20px;
         gap: 15px;
+    }
+    footer p{
+        margin-top: 5px;
+        margin-bottom: 5px;
     }
     .propos{
         padding-left: 0;
