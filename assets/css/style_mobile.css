@@ -146,15 +146,15 @@
         background: none;
     }
     .article1 h2{
-        font-size: 20px;
+        font-size: 18px;
     }
     .article1 p{
-        font-size: 16px;
+        font-size: 14px;
         margin-top: 1px;
         margin-bottom: 0;
     }
     .star{
-        font-size: 12px;
+        font-size: 11px;
     }
     .hbg1{
         margin-bottom: 0;
@@ -190,9 +190,9 @@
         font-weight: 700;
     }
     .activite h2{
-        padding: 15px;
+        padding: 12px;
         padding-top: 7px;
-        font-size: 20px;
+        font-size: 16px;
     }
     
     .activite img{
