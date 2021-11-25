@@ -1,16 +1,7 @@
-@font-face { /* Permet de télécharger une police décriture pour l'intégrer au site */
-    font-family: "raleway";
-    src: url('/Raleway/Raleway-Regular.ttf');
-    src: url('/Raleway/Raleway-Italic.ttf');
-    src: url('/assets/Ralaway/Raleway-Bold.ttf');
-    font-weight: normal;
-    font-style: normal;
-}
-
 body{
     width: auto;
     box-sizing: border-box;
-    font-family: 'Raleway', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 .marge{
